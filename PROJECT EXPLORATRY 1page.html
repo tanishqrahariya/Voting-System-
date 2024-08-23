@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 60px; /* Increased margin to accommodate news container */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin: 20px 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* News ticker styles */
+        .news-container {
+            position: fixed;
+            top: 60px; /* Adjusted top position to account for header height */
+            left: 0;
+            right: 0;
+            font-family: "Roboto", sans-serif;
+            box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+            background-color: #df2020;
+            color: white;
+            font-weight: bold;
+            z-index: 200;
+            padding: 10px 24px;
+        }
+
+        .news-container ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            animation: scroll 25s linear infinite;
+        }
+
+        .news-container ul li {
+            white-space: nowrap;
+            padding: 10px 24px;
+            color: #494949;
+            position: relative;
+        }
+
+        .news-container ul li::after {
+            content:"";
+            width: 1px;
+            height: 100%;
+            background: #b8b8b8;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .news-container ul li:last-child::after {
+            display: none;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Next button styles */
+        .next-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Login and Register button styles */
+        .login-register {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-register button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .login-register button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1><b>ELECTION VOTING FOR LOK SABHA</b></h1>
+</header>
+
+<!-- News Container -->
+<div class="news-container">
+    <div class="title">Updates</div>
+    <ul>
+        <li>Registration for voting!</li>
+        <li>On 15 Feb it will start</li>
+        <li>Opening registration soon</li>
+    </ul>
+</div>
+
+<main>
+    <!-- Your main content -->
+    <h2>YOUR VOTE YOUR RIGHT</h2>
+    <h2>APKA MADD APKA ADIKAR</h2>
+    <hr>
+    <section>
+        <h2>List of the election parties</h2>
+        <table>
+            <tr>
+                <th>Party Number</th>
+                <th>Parties Name</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>BHARTIYA JANTA PARTY  <img src="https://th.bing.com/th/id/OIP.2Ly_8s9lMiQbBCTmL5mRNAHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " height="30px"></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CONGRESS PARTY    <img src="https://th.bing.com/th/id/OIP.CUwTHhdJGUE1AtxVsxNcigHaHa?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7 " height="30px"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>BAHUJAN PARTY    <img src="https://th.bing.com/th/id/OIP.jFKlheVQANLdCeu0y1MtrwAAAA?w=241&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+     
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>COMMUNIST PARTY    <img src="https://th.bing.com/th/id/OIP.8vtkO44DxqVtkZIvYLCpYwAAAA?w=261&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+ 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>NATIONAL CONGRESS PARTY <img src="https://th.bing.com/th/id/OIP.CUwTHhdJGUE1AtxVsxNcigHaHa?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>ALL INDIA TRINAMOOL CONGRESS   <img src="https://th.bing.com/th/id/OIP.vYGW6g2yEUwE6L_js3A5vwHaFO?w=214&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>NATIONAL PEOPLE PARTY   <img src="https://th.bing.com/th/id/OIP.vYGW6g2yEUwE6L_js3A5vwHaFO?w=214&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+ 
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>COMMUNIST PARTY OF INDIA MARXIST <img src="https://th.bing.com/th/id/OIP.KJHmV2MsZJA47P_p8i4bNQAAAA?w=151&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"></td>
+
+            </tr>
+            <!-- Include other party rows with images here -->
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>CODE OF CONDUCT FOR THE GUIDANCE OF POLITICAL PARTIES AND CANDIDATES</h2>
+        <pre>
+        1. General Conduct
+No party or candidate shall include in any activity which may aggravate existing differences or create mutual hatred or cause tension between different castes and communities, religious or linguistic.
+Criticism of other political parties, when made, shall be confined to their policies and programme, past record and work. Parties and Candidates shall refrain from criticism of all aspects of private life, not connected with the public activities of the leaders or workers of other parties. Criticism of other parties or their workers based on unverified allegations or distortion shall be avoided.
+There shall be no appeal to caste or communal feelings for securing votes. Mosques, Churches, Temples or other places of worship shall not be used as forum for election propaganda.
+All parties and candidates shall avoid scrupulously all activities which are “corrupt practices” and offences under the election law, such as bribing of voters, intimidation of voters, impersonation of voters, canvassing within 100 meters of polling stations, holding public meetings during the period of 48 hours ending with the hour fixed for the close of the poll, and the transport and conveyance of voters to and from polling station.
+The right of every individual for peaceful and undisturbed home-life shall be respected, however much the political parties or candidates may resent his political opinions or activities. Organizing demonstrations or picketing before the houses of individuals by way of protesting against their opinions or activities shall not be resorted to under any circumstances.
+</pre>
+<pre>  2. Meetings
+    The party or candidate shall inform the local police authorities of the venue and time any proposed meeting Well in time so as to enable the police to make necessary arrangements for controlling traffic and maintaining peace and order.
+    A Party or candidate shall ascertain in advance if there is any restrictive or prohibitory order in force in the place proposed for the meeting if such orders exist, they shall be followed strictly. If any exemption is required from such orders, it shall be applied for and obtained well in time.
+    If permission or license is to be obtained for the use of loudspeakers or any other facility in connection with any proposed meeting, the party or candidate shall apply to the authority concerned well in advance and obtain such permission or license.
+    Organizers of a meeting shall invariably seek the assistance of the police on duty for dealing with persons disturbing a meeting or otherwise attempting to create disorder. Organizers themselves shall not take action against such persons.
+    </pre>
+    <pre>3. Procession
+    A Party or candidate organizing a procession shall decide before hand the time and place of the starting of the procession, the route to be followed and the time and place at which the procession will terminate. There shall ordinary be no deviation from the programme.
+    The organizers shall give advance intimation to the local police authorities of the programme so as to enable the letter to make necessary arrangement.
+    The organizers shall ascertain if any restrictive orders are in force in the localities through which the procession has to pass, and shall comply with the restrictions unless exempted specially by the competent authority. Any traffic regulations or restrictions shall also be carefully adhered to.
+                </pre>
+    </section>
+    <hr>
+    <section>
+        <h2>AWARENESS ABOUT ELECTION</h2>
+     <pre>What are VAFs? 
+        VVAF.pngoter Awareness Forums (VAFs) are informal forums for generating discussions and awareness around the electoral process, on the how, what and where of registration & voting, through the medium of real-time activities. 
+        Through VAFs in Government Departments, Government and Non-Government Organizations as well as in Corporates; the Election Commission of India aims to spread voter awareness and facilitate voter education.
+        
+        Who shall be the members of VAFs? 
+        The membership of VAFs is voluntary in nature and will be open to all employees of the concerned office. 
+        
+        What shall we do in Voter Awareness Forums?
+        In the VAFs, through a calendar of simple and engaging activities, members will gain awareness on the electoral process and transform into ‘Empowered Voters’ of the nation. 
+        
+     </pre>
+    </section>
+</main>
+
+<footer>
+    <hr>
+        <a href="https://www.eci.gov.in/" style="text-align: center;">ELECTION COMMISSION</a>
+        <hr>
+        <a href="https://www.eci.gov.in/" style="text-align: center;">PROCESS VIDEO OF ELECTION COMMISSION</a>
+        <hr>
+</footer>
+
+
+    
+    
+</div>
+
+<!-- Next button -->
+<a href="PROJECT EXPLORATRY. 3 pagehtml.html">
+<button class="next-button">Next</button>
+</a>
+
+
+   
+</script>
+</body>
+</html>
